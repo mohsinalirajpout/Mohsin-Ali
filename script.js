@@ -281,7 +281,7 @@ const PROJECTS = {
       { src: 'assets/images/projects/complaint-portal-login.webp', alt: 'Sign-in screen for students and staff' },
     ],
     url: '',
-    repo: 'https://github.com/mohsinrajpout72-sudo/Complaint-registration-management-system',
+    repo: 'https://github.com/mohsinalirajpout/Complaint-registration-management-system',
     overview: 'A role-based complaint portal for Govt. M.A.O Graduate College, Lahore. Students submit and track complaints (optionally anonymously), heads of department manage their department, and the principal oversees everything.',
     challenge: 'Anonymous complaints had to stay masked, even from administrators, unless deliberately unmasked with an audit trail. The whole system also had to run on free, open-source components.',
     role: 'Final-year project: design and development of the web application.',
