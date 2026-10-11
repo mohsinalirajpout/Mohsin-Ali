@@ -236,40 +236,6 @@ const PROJECTS = {
     ],
     tech: ['Shopify', 'Essence', 'Liquid', 'Responsive Design'],
   },
-  'sibtain-javed': {
-    title: 'Muhammad Sibtain Javed',
-    category: 'Custom Website · Shia Islamic content creator portfolio',
-    status: { label: 'Live', mod: 'live' },
-    theme: '',
-    image: 'assets/images/projects/sibtain-javed.webp',
-    fullpage: { src: 'assets/images/projects/full/sibtain-javed-homepage.webp', width: 294, height: 2000 },
-    gallery: [
-      { src: 'assets/images/projects/sibtain-javed-videos.webp', alt: 'Featured Videos section with platform filters and video cards' },
-      { src: 'assets/images/projects/sibtain-javed-content.webp', alt: 'What I Share section with content category cards' },
-      { src: 'assets/images/projects/sibtain-javed-journey.webp', alt: 'Channel Overview section with Channels, Platforms and Voices tabs' },
-    ],
-    url: 'https://mohsinalirajpout.github.io/Muhammad-Sibtain-Javed/',
-    urlLabel: 'Visit Website',
-    visualsLabel: 'Website Visuals',
-    galleryLabel: 'Page sections',
-    repo: 'https://github.com/mohsinalirajpout/Muhammad-Sibtain-Javed',
-    overview: 'A portfolio for Muhammad Sibtain Javed (@sjrajpout14), a Shia Islamic content creator from Lahore who shares majlis and bayan clips, nohay, manqabat, WhatsApp status videos and procession footage across YouTube, TikTok, Facebook, Instagram and WhatsApp.',
-    challenge: 'His work is spread across five platforms, with 383 YouTube videos alone. The site had to gather the best clips in one place, let visitors filter and play them without leaving the page, and show his reach with real, dated public numbers.',
-    role: 'Frontend developer: design, development, content structure and GitHub Pages deployment.',
-    built: 'A hand-coded, dark red-and-black site in HTML, CSS and vanilla JavaScript with no frameworks or build step. All content (bio, stats, 33 videos, journey, FAQ and links) lives in a single data.js file, and fonts, thumbnails and icons are stored locally so the site also works offline.',
-    features: [
-      'Hero with typewriter roles, calligraphy logo with a spinning ring and floating tags',
-      'Endless "Latest Uploads" strip of vertical clips that pauses on hover',
-      'Count-up stats: 1.54K subscribers, 270,255 YouTube views, 383 videos and 140.7K TikTok likes',
-      'Featured Videos grid with All / YouTube / Shorts / TikTok / Facebook / Instagram filters and "Show all"',
-      'Video window that plays clips with each platform\'s official player, with a thumbnail fallback',
-      'Topics and "What I Share" content sections',
-      'Channel Overview tabs (Channels, Platforms, Voices) with keyboard support',
-      'FAQ accordion, contact form that opens the visitor\'s email app, and a WhatsApp Channel link',
-      'Sticky header, scroll spy, scroll reveal, back to top and reduced-motion support',
-    ],
-    tech: ['HTML', 'CSS', 'JavaScript', 'Responsive Design', 'GitHub Pages'],
-  },
   'complaint-portal': {
     title: 'Complaint Registration & Management System',
     category: 'Final-year project · BS Information Technology',
@@ -544,11 +510,11 @@ function renderStoreVisuals(p) {
   const f = p.fullpage;
   const domain = p.url ? new URL(p.url).hostname.replace(/^www\./, '') : '';
   const shots = p.gallery && p.gallery.length
-    ? `<div class="media__shots"><p class="media__label">${e(p.galleryLabel || 'Homepage banners')}</p><div class="modal__gallery media__grid">${galleryItems(p.gallery)}</div></div>`
+    ? `<div class="media__shots"><p class="media__label">Homepage banners</p><div class="modal__gallery media__grid">${galleryItems(p.gallery)}</div></div>`
     : '';
   return `
       <div class="modal__block">
-        <h3>${e(p.visualsLabel || 'Store Visuals')}</h3>
+        <h3>Store Visuals</h3>
         <div class="media${shots ? '' : ' media--single'}">
           <figure class="media__page">
             <div class="browser">

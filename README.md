@@ -77,7 +77,6 @@ To receive messages directly in your inbox instead:
 - **Photo sizes:** change `--logo-size` and `--contact-photo-size` near the top of `style.css`.
 - **Projects:** each card is in `index.html` under `PORTFOLIO`. The text in the **View Details** window comes from the `PROJECTS` object in `script.js`; its key must match the button's `data-project` value. Filters use the card's `data-category` (`shopify`, `live`, `demo`, `custom`, `academic`).
 - **Store visuals (MineForever, SNUGYZ, Mod Office):** each card uses the top of the store's homepage screenshot (`assets/images/projects/<name>.webp`). The details window shows the full homepage in a scrollable browser frame (`assets/images/projects/full/<name>-homepage.webp`), plus the store's own banner images loaded from its Shopify CDN. Banners that can't load are hidden automatically. For sharper visuals, replace these files with larger screenshots (1440px wide or more) under the same names.
-- **Muhammad Sibtain Javed website:** the card, the full-page view and the three gallery images (`sibtain-javed-*.webp`) are 1440px-wide screenshots of the live site, all stored locally.
 - **Images:** to replace an image, keep the same file name. Use WebP, and a 16:10 shape for project screenshots.
 - **Resume:** replace `assets/Mohsin-Ali-Resume.pdf` and keep the same file name.
 - **Experience & certifications:** in `index.html` under `CAREER (tabs)`. Experience cards go in `panel-exp`. To add a certificate, copy the `<article class="card cert">` block in `panel-cert` and put its image in `assets/images/certificates/`.
